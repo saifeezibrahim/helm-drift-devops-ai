@@ -1,0 +1,52 @@
+name: drift
+flags:
+  - concurrency
+  - log-level
+  - no-color
+  - revision
+  - set
+  - set-file
+  - set-string
+  - skip-tests
+  - skip-crds
+  - values
+  - version
+  - validate
+commands:
+  - name: run
+    flags:
+      - consider-hooks
+      - custom-diff
+      - disable-error-on-drift
+      - from-release
+      - ignore-hooks
+      - ignore-hpa-changes
+      - kind
+      - limit-threads
+      - name
+      - output
+      - regex
+      - skip
+      - skip-cleaning
+      - skip-validation
+      - temp-path
+  - name: all
+    flags:
+      - consider-hooks
+      - custom-diff
+      - disable-error-on-drift
+      - ignore-hooks
+      - ignore-hpa-changes
+      - is-default-namespace
+      - kind
+      - limit-threads
+      - name
+      - output
+      - regex
+      - skip
+      - skip-cleaning
+      - skip-release
+      - skip-validation
+      - summary
+      - temp-path
+  - name: version
